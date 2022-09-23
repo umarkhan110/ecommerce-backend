@@ -13,7 +13,7 @@ app.use("/user", require("./routes/Usersign.js"));
 app.use("/product", require("./routes/Product.js"));
 
 
-
-app.listen(process.env.PORT || 5000, () => {
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
+app.listen(port, () => {
     console.log("Backend server is running!");
   });
