@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const dotenv = require('dotenv');
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './.env' });
 const mongoose = require('mongoose');
 const cors = require("cors");
 mongoose.connect("mongodb://umar:khan@cluster0-shard-00-00.mxj00.mongodb.net:27017,cluster0-shard-00-01.mxj00.mongodb.net:27017,cluster0-shard-00-02.mxj00.mongodb.net:27017/ecmmui?ssl=true&replicaSet=atlas-vsqdmj-shard-0&authSource=admin&retryWrites=true&w=majority").
